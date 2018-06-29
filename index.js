@@ -1,18 +1,14 @@
 'use strict';
 
 const QRCode = require('qrcode');
-const width = 200;
-const logoWidth = 40;
 
 module.exports = {
-  book: {
-    assets: './assets',
-    js: [],
-  },
   blocks: {
     qrcode: {
       process: function(block) {
-        return QRCode.toDataURL(block.body, { width, version: 6 })
+        let width = block.kwargs.width || 180;
+        let logoWidth = block.kwargs.logoWidth || 40;
+        return QRCode.toDataURL(block.body, { width, version: 10 })
         .then( url => {
           return `
             <div style="width: ${width}px; height: ${width}px">
