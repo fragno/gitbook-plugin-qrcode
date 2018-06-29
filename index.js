@@ -2,7 +2,7 @@
 
 const QRCode = require('qrcode');
 const width = 200;
-const logoWidth = width / 3;
+const logoWidth = 40;
 
 module.exports = {
   book: {
