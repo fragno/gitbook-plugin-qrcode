@@ -1,0 +1,29 @@
+{
+  "name": "gitbook-plugin-qrcode",
+  "version": "0.0.2",
+  "description": "gitbook plugin to generate qrcode",
+  "keywords": [
+    "qrcode"
+  ],
+  "engines": {
+    "gitbook": ">=3.0.0"
+  },
+  "gitbook": {
+    "properties": {
+      "myConfigKey": {
+        "type": "string",
+        "default": "it's the default value",
+        "description": "it defines my awesome config!"
+      }
+    }
+  },
+  "author": "fragno",
+  "license": "ISC",
+  "dependencies": {
+    "qrcode": "^1.2.0"
+  },
+  "repository": { 
+    "type" : "git",
+    "url" : "git@github.com:fragno/gitbook-plugin-qrcode.git"
+  }
+}
